@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Muli");
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin");
+
+body {
+  background-color: darkcyan;
+}
+
+.title {
+  font-family: Muli;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 8vh;
+}
+
+.about {
+  font-family: "Libre Franklin";
+  color: white;
+  display: block;
+}
