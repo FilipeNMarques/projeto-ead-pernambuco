@@ -24,8 +24,8 @@
 					<div class="card">
 						<img class="card-img-top" src="holder.js/100x180/" alt="" />
 						<div class="card-body">
-							<h4 class="card-title">Cadastre seu projeto</h4>
-							<p class="card-text">Ideias inovadoras são sempre bem vindas</p>
+							<h4 class="card-title">Cadastro de novos usuários</h4>
+							<p class="card-text">Cadastro simplificado</p>
 							<form>
 								<div class="form-group">
 									<label for="userName">Nome completo</label>
@@ -38,73 +38,120 @@
 									/>
 								</div>
 								<div class="form-group">
-									<label for="SexUser">Sexo</label> </br>
+									<label for="SexUser">Sexo</label>
+
 									<div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="male">
-                                            <label class="form-check-label" for="inlineRadio1">Masculino</label>
-                                          </div>
-                                          <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="female">
-                                            <label class="form-check-label" for="inlineRadio2">Feminino</label>
-                                          </div>     
-                                </div>
-                                <div class="form-group">
-                                        <div class="form-row">
-                                                <div class="col-lg-2">
-                                                  <input type="text" class="form-control" placeholder="CPF">
-                                                </div>
-                                                <div class="col-lg-2">
-                                                  <input type="text" class="form-control" placeholder="RG">
-                                                </div>
-                                              </div>
-                                </div>
-                                <div class="form-group">
-                                    <div class="form-row">
-                                        <div class="col-lg-3">
-                                                <label>Data de nascimento</label> </br>
-                                            <input type="date" class="form-control" placeholder="Data de nascimento">
-                                        </div>
-                                    </div>
-                                </div>
-								
+										<input
+											class="form-check-input"
+											type="radio"
+											name="inlineRadioOptions"
+											id="inlineRadio1"
+											value="male"
+										/>
+										<label class="form-check-label" for="inlineRadio1"
+											>Masculino</label
+										>
+									</div>
+									<div class="form-check form-check-inline">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="inlineRadioOptions"
+											id="inlineRadio2"
+											value="female"
+										/>
+										<label class="form-check-label" for="inlineRadio2"
+											>Feminino</label
+										>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-row">
+										<div class="col-lg-2">
+											<input
+												type="text"
+												class="form-control"
+												placeholder="CPF"
+											/>
+										</div>
+										<div class="col-lg-2">
+											<input
+												type="text"
+												class="form-control"
+												placeholder="RG"
+											/>
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<div class="form-row">
+										<div class="col-lg-3">
+											<label>Data de nascimento</label>
+											<input
+												type="date"
+												class="form-control"
+												placeholder="Data de nascimento"
+											/>
+										</div>
+									</div>
+								</div>
+								<button
+									id="cadastrar"
+									type="button"
+									class="btn btn-info"
+									data-toggle="modal"
+									data-target="#modalConfirm"
+								>
+									Cadastrar
+								</button>
+							</form>
 
-                                <button id="cadastrar" type="submit" class="btn btn-info" 
-                                        data-toggle="modal" data-target="#modalConfirm">
-                                        Cadastrar</button>
-                            </form>
-                            
-
-
-
-
-
-
-                            <div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Confirmar cadastro</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                                            <span aria-hidden="true">&times;</span>
-                                          </button>
-                                        </div>
-                                        <div class="modal-body">
-                                          <p>Deseja confirmar o cadastro?</p>
-                                        </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Não, pera!</button>
-                                          <button type="button" class="btn btn-primary">Show, vamos lá!</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
+							<div
+								class="modal fade"
+								id="modalConfirm"
+								tabindex="-1"
+								role="dialog"
+								aria-labelledby="modalConfirm"
+								aria-hidden="true"
+							>
+								<div class="modal-dialog modal-sm" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="exampleModalLabel">
+												Confirmar cadastro
+											</h5>
+											<button
+												type="button"
+												class="close"
+												data-dismiss="modal"
+												aria-label="Fechar"
+											>
+												<span aria-hidden="true">&times;</span>
+											</button>
+										</div>
+										<div class="modal-body">
+											<p>Deseja confirmar o cadastro?</p>
+										</div>
+										<div class="modal-footer">
+											<button
+												type="button"
+												class="btn btn-danger"
+												data-dismiss="modal"
+											>
+												Não, pera!
+											</button>
+											<button type="button" class="btn btn-info">
+												Show, vamos lá!
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-        </div>
-        
- .
+		</div>
 
 		<script src="./msng.js"></script>
 
